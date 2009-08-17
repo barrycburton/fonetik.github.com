@@ -1,0 +1,327 @@
+
+body {
+    color:            #fff;
+    margin:           0px;
+    background:       #002c43 url('/images/bg.gif');
+    font-family:      'Lucida Grande', Helvetica, sans-serif;
+    font-weight:      lighter;
+}
+
+#content {
+    width:            510px;
+    margin:           auto;
+    padding:          35px;
+    position:         relative;
+    background:       #005885 url('/images/content_bg.png');
+    border-left:      solid 10px #003955;
+    border-right:     solid 10px #003955;
+}
+
+a {
+    color:            #ff9900;
+}
+
+h1 {
+    padding:          25px 0px 0px 0px;
+    margin:           0px;
+    text-align:       center;
+    font:             Normal 65px Georgia, serif;
+    line-height:      60px;
+    letter-spacing:   -1px;
+    opacity:          0.9;
+    -moz-opacity:     0.9;
+    filter:           alpha(opacity=90);
+}
+
+h1 a {
+    color:            #fff;
+    text-decoration:  none;
+}
+
+.preTitle {
+    padding:          0;
+    margin:           0 0 -10px 0;
+    font:             lighter 14px Georgia, serif;
+    line-height:      12px;
+    letter-spacing:   .2em;
+}
+
+.subTitle {
+    font:             lighter 14px Georgia, serif;
+    line-height:      12px;
+    letter-spacing:   .1em;
+    padding:          0px 0px 65px 0px;
+    margin:           0px;
+    text-align:       center;
+    opacity:          0.9;
+    -moz-opacity:     0.9;
+    filter:           alpha(opacity=90);
+}
+
+div#navigation {
+    position:         absolute;
+    left:             605px;
+    font:             Normal 14px Verdana,sans-serif;
+    line-height:      20px;
+    width:            150px;
+    color:            #568;
+}
+
+div#description {
+    position:         absolute;
+    right:            605px;
+    text-align:       right;
+    width:            200px;
+    font:             Normal 14px Verdana,sans-serif;
+    line-height:      20px;
+    color:            #568;
+}
+
+div#search {
+text-align: right;
+}
+
+div#description div a {
+    color:            #568;
+}
+
+div#searchresultcount {
+text-align:				center;
+}           
+
+ul.links {
+    padding-bottom:      1em;
+    margin-left:      0;
+    padding-left:     0;
+    list-style-type:  none;
+}
+
+ul.links li {
+    margin-top:       2em;
+}
+
+ul.links a {
+    color:            #568;
+    text-decoration:  none;
+}
+
+ul.links a:hover {
+    text-decoration:  underline;
+}
+
+.post {
+    position:         relative;
+    margin-bottom:    50px;
+}
+
+.post .permalink {
+    position:         absolute;
+    top:              8px;
+    right:            3px;
+    display:          none;
+    font-weight:      bold;
+    font-size:        24px;
+    line-height:      0px;
+}
+
+.post:hover .permalink {
+    display:          block;
+}
+
+.post .permalink a {
+    text-decoration:  none;
+}
+
+.post .date {
+    position:         absolute;
+    right:            565px;
+    text-align:       right;
+    width:            200px;
+    white-space:      nowrap;
+    font:             Normal 20px Helvetica, sans-serif;
+    text-align:       right;
+    letter-spacing:   -1px;
+    color:            #888;
+    padding:          5px 5px 5px 5px;
+    line-height:      20px;
+    text-transform:   uppercase;
+}
+
+.post .date em {
+    font-style:       normal;
+    color:            #4075a2;
+}
+
+.post .date big {
+    font-size:        30px;
+}
+
+.post h2 {
+    font:             Normal 20px Georgia, serif;
+    color:            #fff;
+    letter-spacing:   +1px;
+    margin:           0px 0px 10px 0px;
+}
+
+.post h2 a {
+    color:            #fff;
+    text-decoration:  none;
+}
+
+/* Regular Post */
+.post .regular {
+    font-size:        14px;
+    line-height:      18px;
+    font-weight:      lighter;
+}
+
+.post .regular blockquote {
+    font-style: italic;
+}
+
+/* Photo Post */
+.post .photo img {
+    border:           solid 5px #eee;
+}
+
+.post .photo .caption {
+    font-weight:      normal;
+    font-size:        14px;
+    margin-top:       5px;
+}
+
+.post .photo .caption b {
+    font-weight:      normal;
+}
+
+.post .photo .caption a {
+    color:            #fff;
+}
+
+/* Quote Post */
+.post .quote span.quote {
+    font:             Lighter 28px Georgia, serif;
+    letter-spacing:   -1px;
+    color:            #fff;
+}
+
+.post .quote span.quote a {
+    color:            #fff;
+}
+
+.post .quote span.quote big.quote {
+    font-weight:      Lighter;
+    font-size:        60px;
+    line-height:      8px;
+    vertical-align:   -20px;
+}
+
+.post .quote span.source {
+    font-size:        16px;
+    color:            #aaa;
+    letter-spacing:   -1px;
+}
+
+.post .quote span.source a {
+    color:            #aaa;
+}
+
+/* Link Post */
+.post .link a.link {
+    font:             Lighter 30px Helvetica, sans-serif;
+    letter-spacing:   0px;
+    color:            #ff9900;
+    text-decoration:  none;
+    border-bottom:    dotted 1px #ff9900;
+    line-height:      33px;
+}
+
+.post .link .description {
+    font-weight:      normal;
+    font-size:        14px;
+    line-height:      17px;
+    margin-top:       5px;
+}
+
+/* Conversation Post */
+.post .conversation ul {
+    background-color: #46a6e9;
+    list-style-type:  none;
+    margin:           0px;
+    padding:          0px;
+    border-left:      solid 5px #0070ba;
+}
+
+.post .conversation ul li {
+    border-bottom:    solid 1px #0070ba;
+    font-size:        14px;
+    padding:          4px 0px 4px 8px;
+    color:            #000;
+}
+
+.post .conversation ul li span.label {
+    font-weight:      bold;
+}
+
+/* Audio Post */
+.post .audio .caption {
+    font-size:        14px;
+    margin-top:       5px;
+}
+
+.post .audio .caption a {
+    color:            #fff;
+}
+
+/* Video Post */
+.post .video {
+    width:            500px;
+    margin:           auto;
+}
+
+.post .video .caption {
+    font-size:        14px;
+    margin-top:       5px;
+}
+
+.post .video .caption a {
+    color:            #fff;
+}
+
+/* Footer */
+#footer {
+    margin:           20px 0px 0px 0px;
+    text-align:       center;
+    font-size:        22px;
+}
+
+#footer a {
+    text-decoration:  none;
+    color:            #fff;
+}
+
+#footer a:hover {
+    text-decoration:  underline;
+}
+
+#footer p.tiny {
+    margin:           50px 0px 0px 0px;
+    font-size:        11px;
+    font-weight:      bold;
+    line-height:      18px;
+}
+
+#footer p.tiny a {
+    text-decoration:  underline;
+    color:            #fff;
+}
+
+#footer p.tiny .dim {
+    filter: alpha(opacity=50); 
+    -moz-opacity: 0.5; 
+    opacity: 0.5;
+}
+
+#footer p.tiny .tinyLight {
+    font-weight:      normal;
+}
