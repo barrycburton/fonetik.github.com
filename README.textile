@@ -1,5 +1,0 @@
-*README*
-
-_Test Site_
-
-This is GitHub Pages / Jekyll powered test site. Nothing interesting here.
