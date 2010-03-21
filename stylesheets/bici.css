@@ -7,6 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	width: 100%;
 }
 
 .clear {
@@ -18,17 +19,13 @@ a img {
 	border: none;
 }
 
-#wrapper {
-	width: 100%;
-}
-
-#wrapper .center {
+.center {
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
 }
 
-#wrapper #title {
+#title {
 	margin: 16px 0 16px;
 	color: #fff;
 	font-size: 50px;
@@ -39,12 +36,30 @@ a img {
 	text-align: center;
 }
 
-#wrapper #title a {
+#title a {
 	color: #fff;
 	text-decoration: none;
 }
 
-#wrapper #site_nav {
+#top_nav {
+	color: #aaa;
+	font: 8pt "Lucida Grande", Lucida, Verdana, sans-serif;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#top_nav a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+#top_nav a:hover {
+	text-decoration: none;
+}
+
+#site_nav {
 	background-color: #f0f0f0;
 	color: #696969;
 	font: 22px Georgia, "Times New Roman", Times, serif;
@@ -54,7 +69,7 @@ a img {
 	position: relative;
 }
 
-#wrapper .bottom {
+.bottom {
 	background: transparent url('http://assets.tumblr.com/themes/redux/shadow-post.png') repeat-x top center;
 	height: 18px;
 	margin: 0 auto;
@@ -88,11 +103,12 @@ a img {
 	background-color: #a9a9a9;	
 }
 
-#wrapper #content_wrapper {
+#wrapper {
 	background-color: #fff;
 	width: 860px;
 	padding: 60px 0;
-	margin: -70px auto;
+	margin: -70px auto -55px;
+	clear: both;
 }
 
 #wrapper #content {
@@ -195,6 +211,7 @@ a img {
 
 #wrapper #content .post .copy img {
 	max-width: 100%;
+	margin-left: 10px;
 }
 
 #wrapper #content .post .audio {
@@ -489,7 +506,7 @@ a img {
 	font-size: 20px;
 }
 
-#wrapper #content_wrapper #sidebar {
+#wrapper #sidebar {
 	width: 250px;
 	float: right;
 	margin: 10px;
@@ -681,20 +698,35 @@ a img {
 	margin-left: 15px;
 }
 
-#wrapper #bottom_info {
-	height: 32px;
-	padding-top: 6px;
+#bottom_info {
+	height: 24px;
+	padding-top: 8px;
 	background-color: #f0f0f0;
 	font: 8pt "Lucida Grande", Lucida, Verdana, sans-serif;
 	color: #797979;
 }
 
-#wrapper #bottom_info a {
+#bottom_info a {
 	color: #666666;
 	text-decoration: underline;
 }
 
-#wrapper #bottom_info a:hover {
+#bottom_info a:hover {
+	text-decoration: none;
+}
+
+.copyright {
+	color: #aaa;
+	font: 8pt "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin: 20px 10px 10px;
+}
+
+.copyright a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.copyright a:hover {
 	text-decoration: none;
 }
 
