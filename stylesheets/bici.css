@@ -1,7 +1,9 @@
-/* @override http://fonetik.net/stylesheets/fonetik.css */
+/* @override 
+	http://fonetik.net/stylesheets/bici.css
+*/
 
 body {
-	background: #474747 url('http://static.tumblr.com/3znrysj/PYxkzldxh/bg.jpg') top center fixed repeat-y;
+	background: #474747 url('http://static.tumblr.com/3znrysj/PYxkzldxh/bg.jpg') top center repeat-y;
 	margin: 0;
 	padding: 0;
 	font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
@@ -17,8 +19,7 @@ a img {
 }
 
 #wrapper {
-	width: 800px;
-	margin: 0 auto;
+	width: 100%;
 }
 
 #wrapper .center {
@@ -28,7 +29,7 @@ a img {
 }
 
 #wrapper #title {
-	margin: 36px 0 26px;
+	margin: 16px 0 16px;
 	color: #fff;
 	font-size: 50px;
 	font-weight: bold;
@@ -44,17 +45,25 @@ a img {
 }
 
 #wrapper #site_nav {
-	background-color: #fff;
-	color: #a9a9a9;
-	font: bolder 16pt Georgia, "Times New Roman", Times, serif;
+	background-color: #f0f0f0;
+	color: #696969;
+	font: 22px Georgia, "Times New Roman", Times, serif;
 	margin: 0;
-	padding: 0;
-	-moz-box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
-	-khtml-box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
-	-webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+	height: 33px;
+	padding: 10px 0 0;
+	position: relative;
 }
 
-#wrapper #site_nav a {
+#wrapper .bottom {
+	background: transparent url('http://assets.tumblr.com/themes/redux/shadow-post.png') repeat-x top center;
+	height: 18px;
+	margin: 0 auto;
+	z-index: 10;
+	position: relative;
+	width: 100%;
+}
+
+#site_nav a {
 	color: inherit;
 	text-decoration: none;
 }
@@ -67,7 +76,7 @@ a img {
 
 #pages li {
 	display: inline-block;
-	margin: 5px;
+	margin-right: 20px;
 }
 
 #pages li:hover {
@@ -80,23 +89,24 @@ a img {
 }
 
 #wrapper #content_wrapper {
-	background-color: #f0f0f0;
-	width: 800px;
-	padding: 70px 0;
-	z-index: -1;
+	background-color: #fff;
+	width: 860px;
+	padding: 60px 0;
 	margin: -70px auto;
 }
 
 #wrapper #content {
-	width: 520px;
+	width: 500px;
+	margin: 10px 20px 20px;
 	float: left;
+	color: #666666;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
 #wrapper #content .post {
-	font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
-	background: #fff;
-	padding: 10px;
 	position: relative;
+	margin: 0;
+	padding: 0;
 }
 
 #wrapper #content .post .media {
@@ -154,10 +164,11 @@ a img {
 }
 
 #wrapper #content .post .copy {
-	color: #6e7173;
-	padding: 10px;
-	font-size: 13px;
-	line-height: 15px;
+	color: #666666;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+    line-height: 140%;
+    margin: 0;
+	padding: 0;
 }
 
 #wrapper #content .post .copy a {
@@ -166,8 +177,16 @@ a img {
 }
 
 #wrapper #content .post .copy p {
-	margin: 10px 0 0 0;
+	margin: 0 0 20px;
 	padding: 0;
+}
+
+#wrapper #content .post .copy h3 {
+	color: #00a9aa;
+	font: 20px Georgia, "Times New Roman", Times, serif;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 10px;
 }
 
 #wrapper #content .post .copy > p:first-child {
@@ -248,11 +267,18 @@ a img {
 	color: ;
 }
 
-#wrapper #content .post .title {
-	color: #494949;
-	font-size: 16px;
-	font-weight: bold;
-	padding: 10px 10px 0 10px;
+#wrapper #content .post h2.title {
+	padding: 0;
+	margin: 0;
+	color: #5f5f5f;
+	font-family: Geneva, "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: lighter;
+}
+
+#wrapper #content .post hr {
+	border: none;
+	border-bottom: 2px solid #d6d6d6;
 }
 
 #wrapper #content .post img {
@@ -463,19 +489,19 @@ a img {
 	font-size: 20px;
 }
 
-#wrapper #sidebar {
+#wrapper #content_wrapper #sidebar {
 	width: 250px;
 	float: right;
-	color: #3b627e;
-	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif
+	margin: 10px;
+	color: #666666;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
 #wrapper #sidebar a {
-	color: #3b627e;
+	color: #666666;
 }
 
 #wrapper #sidebar #top {
-	background: #fff;
 	padding: 0 20px;
 	-webkit-border-top-left-radius: 10px;
 	-webkit-border-top-right-radius: 10px;
@@ -485,44 +511,23 @@ a img {
 	border-top-right-radius: 10px;
 }
 
-#wrapper #sidebar #top #avatar {
-	width: 146px;
-	height: 146px;
-	padding: 8px 0 0 9px;
-	background: url('http://assets.tumblr.com/themes/redux/avatar-bg.png') top left no-repeat transparent;
-	position: relative;
-	top: -24px;
-	left: -5px;
-}
-
 #wrapper #sidebar #top #description {
-	font-size: 11px;
-	position: relative;
-	top: -18px;
+	font-size: 13px;
+	margin-top: 10px;
 }
 
 #wrapper #sidebar #top #description a {
-	color: #3b627e;
+	color: #666666;
 	text-decoration: underline;
 }
 
 #wrapper #sidebar #top #search {
 	background: #fff;
-	border: 1px solid #3b627e;
+	border: 1px solid #666666;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
-}
-
-#wrapper #sidebar #top #search-scope {
-	padding-top: 5px;
-	font-size: 11px;
-	text-align: center;
-}
-
-#wrapper #sidebar #top #search-scope input,
-#wrapper #sidebar #top #search-scope label {
-	cursor: pointer;
+	margin-top: 5px;
 }
 
 #wrapper #sidebar #top #search form {
@@ -536,11 +541,11 @@ a img {
 	outline: none;
 	width: 125px;
 	float: left;
-	color: #3b627e;
+	color: #666666;
 }
 
 #wrapper #sidebar #top #search form .submit {
-	background: #3b627e;
+	background: #666666;
 	color: #fff;
 	border: none;
 	padding: 5px 7px;
@@ -564,7 +569,7 @@ a img {
 	font-size: 17px;
 	margin-top: 20px;
 	padding: 10px;
-	background-color: #3b627e;
+	background-color: #666666;
 	-webkit-border-top-left-radius: 4px;
 	-webkit-border-top-right-radius: 4px;
 	-moz-border-radius-topleft: 4px;
@@ -579,8 +584,6 @@ a img {
 }
 
 #wrapper #sidebar #top .heading#followontumblr {
-	background: url('http://assets.tumblr.com/themes/redux/sidebar-follow-on-verbose.png') 10px center no-repeat #3b627e;
-	text-indent: -9999px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
@@ -598,7 +601,7 @@ a img {
 }
 
 #wrapper #sidebar #top .heading#following {
-	background: url('http://assets.tumblr.com/themes/redux/sidebar-following.png') right center no-repeat #3b627e;
+	
 }
 
 #wrapper #sidebar #top .content {
@@ -636,7 +639,7 @@ a img {
 }
 
 #wrapper #sidebar #top #buttons a {
-	color: #3b627e;
+	color: #666666;
 	text-decoration: none;
 }
 
@@ -677,3 +680,21 @@ a img {
 	color: #fff;
 	margin-left: 15px;
 }
+
+#wrapper #bottom_info {
+	height: 32px;
+	padding-top: 6px;
+	background-color: #f0f0f0;
+	font: 8pt "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #797979;
+}
+
+#wrapper #bottom_info a {
+	color: #666666;
+	text-decoration: underline;
+}
+
+#wrapper #bottom_info a:hover {
+	text-decoration: none;
+}
+
