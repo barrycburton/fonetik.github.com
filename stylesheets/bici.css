@@ -8,6 +8,7 @@ body {
 	padding: 0;
 	font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
 	width: 100%;
+	min-width: 860px;
 }
 
 .clear {
@@ -44,10 +45,10 @@ a img {
 #top_nav {
 	color: #aaa;
 	font: 8pt "Lucida Grande", Lucida, Verdana, sans-serif;
-	padding: 10px;
 	position: absolute;
 	top: 0;
 	left: 0;
+	padding: 5px 10px;
 }
 
 #top_nav a {
@@ -73,7 +74,6 @@ a img {
 	background: transparent url('http://assets.tumblr.com/themes/redux/shadow-post.png') repeat-x top center;
 	height: 18px;
 	margin: 0 auto;
-	z-index: 10;
 	position: relative;
 	width: 100%;
 }
@@ -111,7 +111,7 @@ a img {
 	clear: both;
 }
 
-#wrapper #content {
+#content {
 	width: 500px;
 	margin: 10px 20px 20px;
 	float: left;
@@ -119,21 +119,25 @@ a img {
 	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
-#wrapper #content .post {
+#content .post {
 	position: relative;
-	margin: 0;
 	padding: 0;
+	margin-top: 80px;
 }
 
-#wrapper #content .post .media {
+#content .post:first-child {
+	margin-top: 0px;
+}
+
+#content .post .media {
 	text-align: center;
 	margin-bottom: 10px;
 }
 
-#wrapper #content .post .quotebg {
+#content .post .quotebg {
 	font-family: georgia, serif;
 	font-size: 150px;
-	color: #3b627e;
+	color: #666666;
 	opacity: 0.2;
 	filter: alpha(opacity=20);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
@@ -142,44 +146,44 @@ a img {
 	left: 10px;
 }
 
-#wrapper #content .post .quote {
-	color: #3b627e;
+#content .post .quote {
+	color: #666666;
 	font-weight: bold;
 	padding: 20px 20px 5px 20px;
 }
 
-#wrapper #content .post .quote.short {
+#content .post .quote.short {
 	font-size: 33px;
 	line-height: 35px;
 }
 
-#wrapper #content .post .quote.medium {
+#content .post .quote.medium {
 	font-size: 25px;
 	line-height: 28px;
 }
 
-#wrapper #content .post .quote.long {
+#content .post .quote.long {
 	font-size: 18px;
 	line-height: 22px;
 }
 
-#wrapper #content .post .quote_source *:first-child {
+#content .post .quote_source *:first-child {
 	margin-top: 0px;
 }
 
-#wrapper #content .post .quote_source *:last-child {
+#content .post .quote_source *:last-child {
 	margin-bottom: 0px;
 }
 
-#wrapper #content .post .quote *:first-child {
+#content .post .quote *:first-child {
 	margin-top: 0px;
 }
 
-#wrapper #content .post .quote *:last-child {
+#content .post .quote *:last-child {
 	margin-bottom: 0px;
 }
 
-#wrapper #content .post .copy {
+#content .post .copy {
 	color: #666666;
 	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
     line-height: 140%;
@@ -187,17 +191,17 @@ a img {
 	padding: 0;
 }
 
-#wrapper #content .post .copy a {
+#content .post .copy a {
 	color: #6e7173;
 	text-decoration: underline;
 }
 
-#wrapper #content .post .copy p {
+#content .post .copy p {
 	margin: 0 0 20px;
 	padding: 0;
 }
 
-#wrapper #content .post .copy h3 {
+#content .post .copy h3 {
 	color: #00a9aa;
 	font: 20px Georgia, "Times New Roman", Times, serif;
 	padding: 0;
@@ -205,16 +209,16 @@ a img {
 	margin-bottom: 10px;
 }
 
-#wrapper #content .post .copy > p:first-child {
+#content .post .copy > p:first-child {
 	margin-top: 0;
 }
 
-#wrapper #content .post .copy img {
+#content .post .copy img {
 	max-width: 100%;
 	margin-left: 10px;
 }
 
-#wrapper #content .post .audio {
+#content .post .audio {
 	background: #eaeaea;
 	float: left;
 	padding: 7px;
@@ -224,15 +228,15 @@ a img {
 	border-radius: 4px;
 }
 
-#wrapper #content .post .audio .player {
+#content .post .audio .player {
 	float: left;
 }
 
-#wrapper #content .post .audio .player .audio_player embed {
+#content .post .audio .player .audio_player embed {
 	border: 1px solid #c8c8c8;
 }
 
-#wrapper #content .post .audio .meta {
+#content .post .audio .meta {
 	padding: 8px 13px;
 	height: 13px;
 	float: left;
@@ -241,16 +245,16 @@ a img {
 	font-size: 11px;
 }
 
-#wrapper #content .post .audio .meta a {
+#content .post .audio .meta a {
 	color: #666;
 	text-decoration: none;
 }
 
-#wrapper #content .post .album_art {
+#content .post .album_art {
 	text-align: center;
 }
 
-#wrapper #content .post .question {
+#content .post .question {
 	color: #494949;
 	font-size: 16px;
 	font-weight: bold;
@@ -263,7 +267,7 @@ a img {
 	position: relative;
 }
 
-#wrapper #content .post .question .nipple {
+#content .post .question .nipple {
 	width: 13px;
 	height: 7px;
 	background: #f1f1f1 url('http://static.tumblr.com/thpaaos/wqzkvsd69/mask_ask.png');
@@ -272,19 +276,19 @@ a img {
 	left: 30px;
 }
 
-#wrapper #content .post .asker_container {
+#content .post .asker_container {
 	margin: 0 0 20px 24px;
 }
 
-#wrapper #content .post .asker_container img {
+#content .post .asker_container img {
 	margin: 0 12px -7px 0;
 }
 
-#wrapper #content .post .asker_container a.asker {
+#content .post .asker_container a.asker {
 	color: ;
 }
 
-#wrapper #content .post h2.title {
+#content .post h2.title {
 	padding: 0;
 	margin: 0;
 	color: #5f5f5f;
@@ -293,44 +297,44 @@ a img {
 	font-weight: lighter;
 }
 
-#wrapper #content .post hr {
+#content .post hr {
 	border: none;
 	border-bottom: 2px solid #d6d6d6;
 }
 
-#wrapper #content .post img {
+#content .post img {
 	max-width: 500px;
 }
 
-#wrapper #content .post .chat {
+#content .post .chat {
 	background-color: #fff;
 	border-left: 5px solid #dedddd;
 	margin: 10px 10px 0 10px;
 	font-size: 14px;
 }
 
-#wrapper #content .post .chat .lines {
+#content .post .chat .lines {
 	margin-left: 1px;
 }
 
-#wrapper #content .post .chat .lines .line {
+#content .post .chat .lines .line {
 	background-color: #eaeaea;
 	color: #494949;
 	margin-bottom: 1px;
 	padding: 3px 5px;
 }
 
-#wrapper #content .post .chat .lines .line.even {
+#content .post .chat .lines .line.even {
 	background-color: #dedddd;
 }
 
-#wrapper #content .post .link {
+#content .post .link {
 	margin: 4px 0 2px 0;
 	font-size: 16px;
 	line-height: 25px;
 }
 
-#wrapper #content .post .link a {
+#content .post .link a {
 	background-color: #3b627e;
 	color: #fff;
 	padding: 5px 7px;
@@ -339,13 +343,13 @@ a img {
 	border-radius: 4px;
 }
 
-#wrapper #content .post .link a:hover {
+#content .post .link a:hover {
 	opacity: 0.9;
 	filter: alpha(opacity=90);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
 }
 
-#wrapper #content .post .footer {
+#content .post .footer {
 	background: #eaeaea;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -357,82 +361,82 @@ a img {
 	margin-top: 10px;
 }
 
-#wrapper #content .post .footer:hover {
+#content .post .footer:hover {
 	opacity: 0.9;
 	filter: alpha(opacity=90);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
 }
 
-#wrapper #content .post .footer .date {
+#content .post .footer .date {
 	width: 67%;
 	float: left;
 	color: #666;
 }
 
-#wrapper #content .post .footer .notes {
+#content .post .footer .notes {
 	width: 33%;
 	float: right;
 	text-align: right;
 	color: #666;
 }
 
-#wrapper #content .post .footer .notes a {
+#content .post .footer .notes a {
 	color: #666;
 }
 
-#wrapper #content .post .footer .tags a {
+#content .post .footer .tags a {
 	color: #4a4a51;
 	text-decoration: underline;
 }
 
-#wrapper #content .post .footer .tags .tag-commas:last-child {
+#content .post .footer .tags .tag-commas:last-child {
 	display: none;
 }
 
-#wrapper #content .post a {
+#content .post a {
 	color: #6e7173;
 	text-decoration: none;
 }
 
-#wrapper #content .post .copy blockquote {
+#content .post .copy blockquote {
 	margin: 10px 0px 10px 10px;
 	padding-left: 15px;
 	border-left: solid 4px #dcdcdc;
 }
 
-#wrapper #content .post .copy blockquote blockquote {
+#content .post .copy blockquote blockquote {
 	border-left: solid 4px #cccccc;
 }
 
-#wrapper #content .post .copy blockquote blockquote blockquote {
+#content .post .copy blockquote blockquote blockquote {
 	border-left: solid 4px #bcbcbc;
 }
 
-#wrapper #content .post .copy blockquote blockquote blockquote blockquote {
+#content .post .copy blockquote blockquote blockquote blockquote {
 	border-left: solid 4px #acacac;
 }
 
-#wrapper #content .post .copy blockquote blockquote blockquote blockquote blockquote {
+#content .post .copy blockquote blockquote blockquote blockquote blockquote {
 	border-left: solid 4px #9c9c9c;
 }
 
-#wrapper #content .post .copy blockquote blockquote blockquote blockquote blockquote blockquote {
+#content .post .copy blockquote blockquote blockquote blockquote blockquote blockquote {
 	border-left: solid 4px #8c8c8c;
 }
 
-#wrapper #content .bottom {
+#content .bottom {
 	background: url('http://assets.tumblr.com/themes/redux/shadow-post.png') top center no-repeat transparent;
 	width: 513px;
 	height: 40px;
 	margin: 0 auto;
 }
 
-#wrapper #content #navigation {
+#content #navigation {
 	text-align: right;
 	padding-bottom: 35px;
 }
 
-#wrapper #content #navigation a {
+#content #navigation a {
 	background-color: #fff;
 	color: #3b627e;
 	padding: 5px 10px;
@@ -440,13 +444,13 @@ a img {
 	margin-left: 25px;
 }
 
-#wrapper #content #navigation a:hover {
+#content #navigation a:hover {
 	opacity: 0.9;
 	filter: alpha(opacity=90);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
 }
 
-#wrapper #content .post .notecontainer {
+#content .post .notecontainer {
 	background: #eaeaea;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -458,47 +462,47 @@ a img {
 	margin-bottom: -10px;
 }
 
-#wrapper #content .post .notecontainer a {
+#content .post .notecontainer a {
 	color: #666;
 	text-decoration: underline;
 }
 
-#wrapper #content .post .notecontainer ol.notes {
+#content .post .notecontainer ol.notes {
 	padding: 0px 0 10px 0;
 	list-style-type: none;
 	font-size: 11px;
 }
 
-#wrapper #content .post .notecontainer ol.notes li.note {
+#content .post .notecontainer ol.notes li.note {
 	padding: 10px 10px 0 10px;
 }
 
-#wrapper #content .post .notecontainer ol.notes li.note img.avatar {
+#content .post .notecontainer ol.notes li.note img.avatar {
 	vertical-align: -4px;
 	margin-right: 10px;
 	width: 16px;
 	height: 16px;
 }
 
-#wrapper #content .post .notecontainer ol.notes li.note span.action {
+#content .post .notecontainer ol.notes li.note span.action {
 	font-weight: normal;
 }
 
-#wrapper #content .post .notecontainer ol.notes li.note .answer_content {
+#content .post .notecontainer ol.notes li.note .answer_content {
 	font-weight: normal;
 }
 
-#wrapper #content .post .notecontainer ol.notes li.note blockquote {
+#content .post .notecontainer ol.notes li.note blockquote {
 	border-left: 2px solid #666;
 	padding: 4px 10px;
 	margin: 10px 0px 0px 25px;
 }
 
-#wrapper #content .post .notecontainer ol.notes li.note blockquote a {
+#content .post .notecontainer ol.notes li.note blockquote a {
 	text-decoration: none;
 }
 
-#wrapper #content #searchresults {
+#content #searchresults {
 	color: #fff;
 	margin: 0 0 15px 0;
 	text-shadow: #2f2f2f 1px 3px 5px;
@@ -506,7 +510,7 @@ a img {
 	font-size: 20px;
 }
 
-#wrapper #sidebar {
+#sidebar {
 	width: 250px;
 	float: right;
 	margin: 10px;
@@ -514,11 +518,11 @@ a img {
 	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
-#wrapper #sidebar a {
+#sidebar a {
 	color: #666666;
 }
 
-#wrapper #sidebar #top {
+#sidebar #top {
 	padding: 0 20px;
 	-webkit-border-top-left-radius: 10px;
 	-webkit-border-top-right-radius: 10px;
@@ -528,17 +532,7 @@ a img {
 	border-top-right-radius: 10px;
 }
 
-#wrapper #sidebar #top #description {
-	font-size: 13px;
-	margin-top: 10px;
-}
-
-#wrapper #sidebar #top #description a {
-	color: #666666;
-	text-decoration: underline;
-}
-
-#wrapper #sidebar #top #search {
+#sidebar #top #search {
 	background: #fff;
 	border: 1px solid #666666;
 	-moz-border-radius: 4px;
@@ -547,11 +541,11 @@ a img {
 	margin-top: 5px;
 }
 
-#wrapper #sidebar #top #search form {
+#sidebar #top #search form {
 	margin: 0;
 }
 
-#wrapper #sidebar #top #search form .query {
+#sidebar #top #search form .query {
 	padding: 5px;
 	border: none;
 	background: transparent;
@@ -561,7 +555,7 @@ a img {
 	color: #666666;
 }
 
-#wrapper #sidebar #top #search form .submit {
+#sidebar #top #search form .submit {
 	background: #666666;
 	color: #fff;
 	border: none;
@@ -574,13 +568,61 @@ a img {
 	cursor: pointer;
 }
 
-#wrapper #sidebar #top #search form .submit:hover {
+#sidebar #top #search form .submit:hover {
 	opacity: 0.9;
 	filter: alpha(opacity=90);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
 }
 
-#wrapper #sidebar #top .heading {
+#sidebar #top #buttons {
+	padding: 20px 0 0 0;
+}
+
+#sidebar #top #buttons .button {
+	width: 35%;
+	height: 21px;
+	float: left;
+	background: left center no-repeat transparent;
+	padding: 2px 0 0 30px;
+	font-size: 14px;
+}
+
+#sidebar #top #buttons a {
+	color: #666666;
+	text-decoration: none;
+}
+
+#sidebar #top #buttons div {
+	padding-bottom: 10px;
+}
+
+#sidebar #top #buttons .button#button-rss {
+	background-image: url('http://assets.tumblr.com/themes/redux/button-rss.png?2');
+}
+
+#sidebar #top #buttons .button#button-random {
+	background-image: url('http://assets.tumblr.com/themes/redux/button-random.png?2');
+}
+
+#sidebar #top #buttons .button#button-archive {
+	background-image: url('http://assets.tumblr.com/themes/redux/button-archive.png?2');
+}
+
+#sidebar #top #buttons .button#button-mobile {
+	background-image: url('http://assets.tumblr.com/themes/redux/button-mobile.png?2');
+}
+
+#sidebar #top #description {
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+#sidebar #top #description a {
+	color: #666666;
+	text-decoration: underline;
+}
+
+#sidebar #top .heading {
 	color: #fff;
 	font-family: helvetica, arial, sans-serif;
 	font-size: 17px;
@@ -595,33 +637,48 @@ a img {
 	border-top-right-radius: 4px;
 }
 
-#wrapper #sidebar #top a .heading {
+#sidebar #top a .heading {
 	color: #fff;
 	text-decoration: none;
+	text-align: center;
 }
 
-#wrapper #sidebar #top .heading#followontumblr {
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
-}
-
-#wrapper #sidebar #top .heading#followontumblr:hover,
-#wrapper #sidebar #top .heading#twitter:hover {
-	opacity: 0.9;
-	filter: alpha(opacity=90);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-}
-
-#wrapper #sidebar #top .heading#twitter {
+#sidebar #top .heading#twitter {
 	background: url('http://assets.tumblr.com/themes/redux/sidebar-twitter.png') right center no-repeat #3b627e;
 }
 
-#wrapper #sidebar #top .heading#following {
-	
+
+/*
+Images are wrapped in divs classed "flickr_badge_image" with ids "flickr_badge_imageX" where "X" is an integer specifying ordinal position. Below are some styles to get you started!
+*/
+#flickr_badge_uber_wrapper {
+
 }
 
-#wrapper #sidebar #top .content {
+#flickr_badge_wrapper {
+	padding: 10px 0 10px 0;
+	text-align: center;
+}
+
+.flickr_badge_image {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.flickr_badge_image img {
+	border: 5px solid #fff !important;
+}
+
+#flickr_badge_uber_wrapper a:hover,
+#flickr_badge_uber_wrapper a:link,
+#flickr_badge_uber_wrapper a:active,
+#flickr_badge_uber_wrapper a:visited {
+	text-decoration:none !important;
+	background:inherit !important;
+	color:#3993ff;
+}
+
+#sidebar #top .content {
 	margin-top: 2px;
 	padding: 7px 10px;
 	background: #eaeaea;
@@ -630,76 +687,32 @@ a img {
 	overflow: hidden;
 }
 
-#wrapper #sidebar #top a {
+#sidebar #top a {
 	text-decoration: none;
 }
 
-#wrapper #sidebar #top #following-avatars.content {
+#sidebar #top .heading:hover {
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+
+#sidebar #top #following-avatars.content {
 	padding: 4px;
 }
 
-#wrapper #sidebar #top #following-avatars.content a img {
-	margin: 5px;
+#sidebar #top #following-avatars.content a img {
+	margin: 4px;
 }
 
-#wrapper #sidebar #top #buttons {
-	padding: 20px 0 0 0;
-}
-
-#wrapper #sidebar #top #buttons .button {
-	width: 35%;
-	height: 21px;
-	float: left;
-	background: left center no-repeat transparent;
-	padding: 2px 0 0 30px;
-	font-size: 14px;
-}
-
-#wrapper #sidebar #top #buttons a {
-	color: #666666;
-	text-decoration: none;
-}
-
-#wrapper #sidebar #top #buttons div {
-	padding-bottom: 10px;
-}
-
-#wrapper #sidebar #top #buttons .button#button-rss {
-	background-image: url('http://assets.tumblr.com/themes/redux/button-rss.png?2');
-}
-
-#wrapper #sidebar #top #buttons .button#button-random {
-	background-image: url('http://assets.tumblr.com/themes/redux/button-random.png?2');
-}
-
-#wrapper #sidebar #top #buttons .button#button-archive {
-	background-image: url('http://assets.tumblr.com/themes/redux/button-archive.png?2');
-}
-
-#wrapper #sidebar #top #buttons .button#button-mobile {
-	background-image: url('http://assets.tumblr.com/themes/redux/button-mobile.png?2');
-}
-
-#wrapper #sidebar #bottom {
+#sidebar #bottom {
 	background: url('http://assets.tumblr.com/themes/redux/sidebar-bottom.png') top center no-repeat transparent;
 	width: 250px;
 	height: 25px;
 }
 
-#wrapper #sidebar #copyright {
-	text-align: center;
-	color: #fff;
-	font-size: 12px;
-	margin-bottom: 10px;
-}
-
-#wrapper #sidebar #copyright a {
-	color: #fff;
-	margin-left: 15px;
-}
-
 #bottom_info {
-	height: 24px;
+	height: 22px;
 	padding-top: 8px;
 	background-color: #f0f0f0;
 	font: 8pt "Lucida Grande", Lucida, Verdana, sans-serif;
@@ -718,15 +731,15 @@ a img {
 .copyright {
 	color: #aaa;
 	font: 8pt "Lucida Grande", Lucida, Verdana, sans-serif;
-	margin: 20px 10px 10px;
+	margin: 20px 10px 15px;
 }
 
 .copyright a {
 	color: inherit;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .copyright a:hover {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
