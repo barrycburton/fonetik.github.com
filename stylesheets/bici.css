@@ -757,6 +757,11 @@ Images are wrapped in divs classed "flickr_badge_image" with ids "flickr_badge_i
 	z-index: 10;
 }
 
+#bottom_bottom {
+	position: relative;
+	top: -80px;
+}
+
 #bottom_info a {
 	color: #666666;
 	text-decoration: underline;
@@ -769,7 +774,10 @@ Images are wrapped in divs classed "flickr_badge_image" with ids "flickr_badge_i
 .copyright {
 	color: #aaa;
 	font: 8pt "Lucida Grande", Lucida, Verdana, sans-serif;
-	margin: 30px 10px 15px;
+	margin-top: -50px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 15px;
 }
 
 .copyright a {
