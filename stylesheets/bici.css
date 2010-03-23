@@ -11,6 +11,15 @@ body {
 	min-width: 860px;
 }
 
+a {
+	color: #ff901f;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 .clear {
 	clear: both;
 	height: 1px;
@@ -27,7 +36,7 @@ a img {
 }
 
 #title {
-	margin: 16px 0 16px;
+	margin: 26px 0 26px;
 	color: #fff;
 	font-size: 50px;
 	font-weight: bold;
@@ -65,7 +74,7 @@ a img {
 	color: #696969;
 	font: 22px Georgia, "Times New Roman", Times, serif;
 	margin: 0;
-	height: 33px;
+	height: 35px;
 	padding: 10px 0 0;
 	position: relative;
 }
@@ -75,7 +84,6 @@ a img {
 	height: 18px;
 	margin: 0 auto;
 	position: relative;
-	width: 100%;
 }
 
 #site_nav a {
@@ -103,11 +111,68 @@ a img {
 	background-color: #a9a9a9;	
 }
 
+#left_ribbon {
+	float: left;
+	width: 50%;
+	margin-right: -430px;
+}
+
+#right_ribbon {
+	float: right;
+	width: 50%;
+	margin-left: -430px;
+}
+
+#left_ribbon .bottom {
+	margin-right: 430px;
+}
+
+#right_ribbon .bottom {
+	margin-left: 430px;
+}
+
+#left_ribbon .turquois {
+	height: 26px;
+	background: #00a9aa;
+	margin-right: 430px;
+	opacity: 0.9;
+	margin-top: -2px;
+}
+
+#right_ribbon .turquois {
+	height: 26px;
+	background: #00a9aa;
+	margin-left: 430px;
+	opacity: 0.9;
+	margin-top: -2px;
+}
+
+#left_ribbon .orange {
+	height: 20px;
+	background-color: #ff901f;
+	margin-right: 430px;
+	opacity: 0.9;
+	margin-top: -8px;
+}
+
+#right_ribbon .orange {
+	height: 20px;
+	background-color: #ff901f;
+	margin-left: 430px;
+	opacity: 0.9;
+	margin-top: -8px;
+}
+
 #wrapper {
 	background-color: #fff;
 	width: 860px;
+	float: left;
+	margin: -75px 0 0;
 	padding: 60px 0;
-	margin: -70px auto -55px;
+}
+
+#wrapper_bottom {
+	width: 860px;
 	clear: both;
 }
 
@@ -191,11 +256,6 @@ a img {
 	padding: 0;
 }
 
-#content .post .copy a {
-	color: #6e7173;
-	text-decoration: underline;
-}
-
 #content .post .copy p {
 	margin: 0 0 20px;
 	padding: 0;
@@ -243,11 +303,6 @@ a img {
 	color: #666;
 	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 	font-size: 11px;
-}
-
-#content .post .audio .meta a {
-	color: #666;
-	text-decoration: none;
 }
 
 #content .post .album_art {
@@ -385,17 +440,11 @@ a img {
 }
 
 #content .post .footer .tags a {
-	color: #4a4a51;
 	text-decoration: underline;
 }
 
 #content .post .footer .tags .tag-commas:last-child {
 	display: none;
-}
-
-#content .post a {
-	color: #6e7173;
-	text-decoration: none;
 }
 
 #content .post .copy blockquote {
@@ -518,10 +567,6 @@ a img {
 	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
-#sidebar a {
-	color: #666666;
-}
-
 #sidebar #top {
 	padding: 0 20px;
 	-webkit-border-top-left-radius: 10px;
@@ -617,11 +662,6 @@ a img {
 	margin-top: 10px;
 }
 
-#sidebar #top #description a {
-	color: #666666;
-	text-decoration: underline;
-}
-
 #sidebar #top .heading {
 	color: #fff;
 	font-family: helvetica, arial, sans-serif;
@@ -644,7 +684,7 @@ a img {
 }
 
 #sidebar #top .heading#twitter {
-	background: url('http://assets.tumblr.com/themes/redux/sidebar-twitter.png') right center no-repeat #3b627e;
+	background: url('http://assets.tumblr.com/themes/redux/sidebar-twitter.png') right center no-repeat #666666;
 }
 
 
@@ -687,10 +727,6 @@ Images are wrapped in divs classed "flickr_badge_image" with ids "flickr_badge_i
 	overflow: hidden;
 }
 
-#sidebar #top a {
-	text-decoration: none;
-}
-
 #sidebar #top .heading:hover {
 	opacity: 0.9;
 	filter: alpha(opacity=90);
@@ -712,11 +748,13 @@ Images are wrapped in divs classed "flickr_badge_image" with ids "flickr_badge_i
 }
 
 #bottom_info {
-	height: 22px;
+	min-height: 24px;
+	margin-top: -80px;
 	padding-top: 8px;
 	background-color: #f0f0f0;
 	font: 8pt "Lucida Grande", Lucida, Verdana, sans-serif;
 	color: #797979;
+
 }
 
 #bottom_info a {
@@ -731,7 +769,7 @@ Images are wrapped in divs classed "flickr_badge_image" with ids "flickr_badge_i
 .copyright {
 	color: #aaa;
 	font: 8pt "Lucida Grande", Lucida, Verdana, sans-serif;
-	margin: 20px 10px 15px;
+	margin: 30px 10px 15px;
 }
 
 .copyright a {
