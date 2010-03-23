@@ -77,6 +77,7 @@ a img {
 	height: 35px;
 	padding: 10px 0 0;
 	position: relative;
+	z-index: 10;
 }
 
 .bottom {
@@ -136,7 +137,7 @@ a img {
 	background: #00a9aa;
 	margin-right: 430px;
 	opacity: 0.9;
-	margin-top: -2px;
+	margin-top: -10px;
 }
 
 #right_ribbon .turquois {
@@ -144,7 +145,7 @@ a img {
 	background: #00a9aa;
 	margin-left: 430px;
 	opacity: 0.9;
-	margin-top: -2px;
+	margin-top: -10px;
 }
 
 #left_ribbon .orange {
@@ -152,7 +153,7 @@ a img {
 	background-color: #ff901f;
 	margin-right: 430px;
 	opacity: 0.9;
-	margin-top: -8px;
+	margin-top: -12px;
 }
 
 #right_ribbon .orange {
@@ -160,7 +161,7 @@ a img {
 	background-color: #ff901f;
 	margin-left: 430px;
 	opacity: 0.9;
-	margin-top: -8px;
+	margin-top: -12px;
 }
 
 #wrapper {
@@ -748,13 +749,14 @@ Images are wrapped in divs classed "flickr_badge_image" with ids "flickr_badge_i
 }
 
 #bottom_info {
-	min-height: 24px;
+	height: 24px;
 	margin-top: -80px;
 	padding-top: 8px;
 	background-color: #f0f0f0;
 	font: 8pt "Lucida Grande", Lucida, Verdana, sans-serif;
 	color: #797979;
-
+	position: relative;
+	z-index: 10;
 }
 
 #bottom_info a {
