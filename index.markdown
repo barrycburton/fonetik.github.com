@@ -3,7 +3,7 @@ layout: pages
 title: About
 ---
 
-We are an independent development shop that specializes in custom development of applications made usable by well designed interfaces, resulting in an unconventional aesthetics manifest both in appearance and interaction. Simplicity can be a virtue if all needed features are provided but no more. For instance, it is better to have an intuitive interface which guides use rather than requiring the consultation of a separate, dry user manual.
+We specialize in custom development of applications made usable by well designed interfaces, resulting in an unconventional aesthetics manifest both in appearance and interaction. Simplicity can be a virtue if all needed features are provided but no more. For instance, it is better to have an intuitive interface which guides use rather than requiring the consultation of a separate, dry user manual.
 
 We primarily deploy solutions as iPhone OS applications and standards compliant web application using Ruby and Rails. We are particularly excited by the current possibilities of vertical applications in which we integrate a rich web application also provides the data store for a  beautiful mobile specific interface provided by an iPhone application. For more desktop oriented needs we can also develop a native Macintosh OS X application using Cocoa and Objective-C.
 
