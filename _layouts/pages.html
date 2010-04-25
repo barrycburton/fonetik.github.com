@@ -37,11 +37,6 @@
 <body>
 	<div id="content">
     <h1><a href="/"><div class="preTitle">industries</div>fonetik</a></h1>
-    {% for page in site.pages %} 
-      {{ page.content }}
-      {{ page.title }}
-      {{ page }}
-    {% endfor %}
         <div id="description">
             <p>The beautifully simple software company. Designing a more simple life since 2001.</p>
         </div>
@@ -49,10 +44,9 @@
         <div id="navigation">
             <ul class="links">
                 <li><a href="/">About</a></li>
-                <li><a href="/experience.html">Experience</a></li>
-                <li><a href="/philosophy.html">Philosophy</a></li>
-                <li><a href="/services.html">Services</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                {% for page in site.posts reversed %} 
+                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                {% endfor %}
                 <li><a href="http://rivulet.fonetik.net/" title="A rivulet of unconventional aesthetics; the songs will write the words.">Rivulet Fonetik</a></li>
                 <li><a href="http://twitter.com/fonetik/" title="An information trickle, Twitter streamed.">Twitter Fonetik</a></li>
                 <li><a href="http://flickr.com/photos/fonetik/" title="The photos, Flickr streamed.">Flickr Fonetik</a></li>
